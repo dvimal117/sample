@@ -4,7 +4,7 @@ node{
         git url: 'https://github.com/mupparajuvamsi/mavenwebappdemo.git',branch: 'master'
     }
     
-    stage(" Maven Clean Package"){
+    stage(" Maven Clean Package learning"){
       def mavenHome =  tool name: "Maven-3.5.6", type: "maven"
       def mavenCMD = "${mavenHome}/bin/mvn"
       sh "${mavenCMD} clean package -f mavenwebappdemo/pom.xml"
