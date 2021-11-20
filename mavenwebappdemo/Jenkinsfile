@@ -1,0 +1,13 @@
+pipeline{
+    agent any
+    tools{
+        maven "maven 3.8.2"
+    }
+    stages{
+        stage('trigger pipeline'){
+            steps{
+                echo 'successfully pipeline job triggered'
+            }
+        }
+    }
+}
