@@ -1,6 +1,6 @@
 node{
      
-    stage('SCM Checkout'){
+    stage('SCM Checkout master'){
         git url: 'https://github.com/mupparajuvamsi/mavenwebappdemo.git',branch: 'master'
     }
     
